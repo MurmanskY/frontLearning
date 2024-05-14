@@ -1,0 +1,39 @@
+html {
+  font-size: 20px;
+  font-family: "Open Sans", sans-serif;
+  background-color: #00539f;
+}
+
+/* html文件的body中的内容 */
+body {
+  width: 600px;
+  margin: 0 auto;
+  background-color: #ff9500;
+  padding: 0px 20px 20px 20px;
+  border: 5px solid black;
+}
+
+h1 {
+  margin: 0;
+  padding: 20px 0;
+  color: #00539f;
+  text-shadow: 3px 3px 2px black;
+  font-size: 60px;
+  text-align: center;
+}
+
+/* 图片居中 */
+img {
+  display: block;
+  margin: 0 auto;
+}
+
+p,
+li {
+  color: black;
+  font-size: 16px;
+  line-height: 2;
+  letter-spacing: 1px;
+  width: 500px;
+  /* border: 1px solid black; */
+}

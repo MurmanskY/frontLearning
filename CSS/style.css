@@ -1,0 +1,41 @@
+h1 {
+  color: red;
+}
+
+p,
+li {
+  color: green;
+}
+
+li {
+  list-style-type: none;
+}
+
+li.special,
+span.special {
+  color: orange;
+  font-weight: bold;
+}
+
+li em {
+  color: rebeccapurple;
+}
+
+h1 + p {
+  font-size: 200%;
+}
+
+/* 没有被访问过的链接是粉色 */
+a:link {
+  color: pink;
+}
+
+/* 链接如果被访问过就变变成绿色 */
+a:visited {
+  color: green;
+}
+
+/* 鼠标悬停 */
+a:hover {
+  text-decoration: none;
+}
