@@ -8,18 +8,17 @@
   ```
 
 ## 数据类型
-
-	| 变量                                                         | 解释                                                         | 示例                                                         |
+| 变量                                                         | 解释                                                         | 示例                                                         |
 | :----------------------------------------------------------- | :----------------------------------------------------------- | :----------------------------------------------------------- |
 | [String](https://developer.mozilla.org/zh-CN/docs/Glossary/String) | 字符串（一串文本）：字符串的值必须用引号（单双均可，必须成对）括起来。 | `let myVariable = '李雷';`                                   |
 | [Number](https://developer.mozilla.org/zh-CN/docs/Glossary/Number) | 数字：无需引号。                                             | `let myVariable = 10;`                                       |
-| [Boolean](https://developer.mozilla.org/zh-CN/docs/Glossary/Boolean) | 布尔值（真 / 假）： `true`/`false` 是 JS 里的特殊关键字，无需引号。 | `let myVariable = true;`                                     |
+| [Boolean](https://developer.mozilla.org/zh-CN/docs/Glossary/Boolean) | 布尔值（真 / 假）： `true`/`flse` 是 JS 里的特殊关键字，无需引号。 | `let myVariable = true;`                                     |
 | [Array](https://developer.mozilla.org/zh-CN/docs/Glossary/Array) | 数组：用于在单一引用中存储多个值的结构。                     | `let myVariable = [1, '李雷', '韩梅梅', 10];` 元素引用方法：`myVariable[0]`, `myVariable[1]` …… |
 | [Object](https://developer.mozilla.org/zh-CN/docs/Glossary/Object) | 对象：JavaScript 里一切皆对象，一切皆可储存在变量里。这一点要牢记于心。 | `let myVariable = document.querySelector('h1');` 以及上面所有示例都是对象。 |
 
 ## 运算符
 
-	| 运算符     | 解释                                                         | 符号          | 示例                                                         |
+| 运算符     | 解释                                                         | 符号          | 示例                                                         |
 | :--------- | :----------------------------------------------------------- | :------------ | :----------------------------------------------------------- |
 | 加         | 将两个数字相加，或拼接两个字符串。                           | `+`           | `6 + 9;"Hello " + "world!";`                                 |
 | 减、乘、除 | 这些运算符操作与基础算术一致。只是乘法写作星号，除法写作斜杠。 | `-`, `*`, `/` | `9 - 3;8 * 2; //乘法在 JS 中是一个星号9 / 3;`                |
@@ -251,7 +250,81 @@ function result() {
 
 ## 图片库项目
 
+[项目链接文件夹](../JS/图片库)
+
+## 循环吧代码
+
+- ```js
+  if(condition 1) {
+    //code to run
+  } else if (condition 2) {
+    //code to run
+  } else {
+    //code to run
+  }
+  ```
+
+- ```js
+  while(condition) {
+    //code to run
+  }
+  ```
+
+- ```js
+  do {
+    //code to run
+  } while (condition)
+  ```
+
+## 函数----可复用的代码块
+
+- 匿名函数
+  当用户按下某个按键时，浏览器将调用你提供的函数，并传递给它一个包含该事件信息的参数，其中包括用户按下的特定按键：
+
+  ```js
+  textBox.addEventListener("keydown", function (event) {
+    console.log(`You pressed "${event.key}".`);
+  });
+  ```
+
+- 箭头函数
+  如果你传递这样一个匿名函数，你可以使用另一种形式，即**箭头函数**。你可以用 `(event) =>` 来代替 `function(event)`：
+
+  ```js
+  textBox.addEventListener("keydown", (event) => {
+    console.log(`You pressed "${event.key}".`);
+  });
+  ```
+
+  如果函数只接收一个参数，可以省略周围的括号
+  ```js
+  textBox.addEventListener("keydown", event => {
+    console.log(`You pressed "${event.key}".`);
+  });
+  ```
+
+- 和scope玩耍
+  [完成的项目](../JS/和scope玩耍)
+
+## 创建你自己的函数
+
+[创建自己的函数](../JS/创建自己的函数)
 
 
 
+## 函数返回值
+
+项目：[我们自己的返回值函数](../JS/我们自己的返回值函数)
+
+
+
+## 事件介绍
+
+[MDN文档中时间表](https://developer.mozilla.org/zh-CN/docs/Web/Events#%E4%BA%8B%E4%BB%B6%E5%88%97%E8%A1%A8)
+
+
+
+
+
+# JavaScript对象介绍
 
