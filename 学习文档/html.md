@@ -236,4 +236,47 @@
   浏览器会在term和definition之间产生缩进（*单个术语可以有多个定义*）每个定义之间不会产生额外的缩进
   <img src="/Users/mac/Library/Application Support/typora-user-images/image-20240512162233938.png" alt="image-20240512162233938" style="zoom:50%;" />
 
-- TODO::
+- 引用
+  使用`<blockquote>`元素包裹起来，在cite属性里用URL来指向引用资源
+
+  ```html
+  <p>Here is a blockquote:</p>
+  <blockquote
+    cite="https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/blockquote">
+    <p>
+      The <strong>HTML <code>&lt;blockquote&gt;</code> Element</strong> (or
+      <em>HTML Block Quotation Element</em>) indicates that the enclosed text is
+      an extended quotation.
+    </p>
+  </blockquote>
+  ```
+
+  <img src="/Users/mac/Library/Application Support/typora-user-images/image-20240515152141509.png" alt="image-20240515152141509" style="zoom:50%;" />
+
+- 缩略语
+  使用`<abbr>`元素来包裹一个缩略语或者缩写，并提供缩写的解释（放在title里）
+
+  ```html
+  <p>
+    我们使用
+    <abbr title="超文本标记语言（Hyper text Markup Language）">HTML</abbr>
+    来组织网页文档。
+  </p>
+  
+  <p>
+    第 33 届<abbr title="夏季奥林匹克运动会">奥运会</abbr>将于 2024 年 8
+    月在法国巴黎举行。
+  </p>
+  ```
+
+  <img src="/Users/mac/Library/Application Support/typora-user-images/image-20240515152520947.png" alt="image-20240515152520947" style="zoom:50%;" />
+
+- 标记联系方式
+  使用`<address> code </address>`
+
+- 上标与下标
+  上标`<sup> code </sup>`
+
+  下标`<sub> code </sub>`
+
+- 
